@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import styles from './Footer.module.css';
+import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
@@ -10,12 +10,13 @@ const Footer = () => {
         href="https://www.openpeeps.com/"
         target="_blank"
         rel="noopener noreferrer"
+        className={styles.a}
       >
         Open Peeps
       </a>
       , by Pablo Stanley
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
