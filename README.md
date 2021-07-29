@@ -2,7 +2,6 @@
 
 In this workshop, you'll build a Sims-style character creation screen.
 
-
 ## Mockups
 
 Desktop:
@@ -48,14 +47,10 @@ This project uses **CSS Modules**. CSS modules are ultimately very similar to va
 
 ```js
 /* Something.js */
-import styles from './Something.module.css';
+import styles from './Something.module.css'
 
 function Something() {
-  return (
-    <div className={styles.wrapper}>
-      I'll be 500px wide!
-    </div>
-  );
+  return <div className={styles.wrapper}>I'll be 500px wide!</div>
 }
 ```
 
@@ -75,6 +70,8 @@ Next, let's tackle the biggest visual issue: the layout.
 
 We have a `MaxWidthWrapper` constraining the max width, but everything is super wide within it.
 
+### Done
+
 Our header should be 65% of the available width, and our control-panel column should be 50%.
 
 <img alt="Annotated mockup showing the overall width at 1024px, the header occupying 65%, and the control panels occupying 50%" src="./docs/sizes.png" style="width: 100%;" />
@@ -85,11 +82,15 @@ Give the character a minimum height of 500px. On smaller windows, this means the
 
 <img alt="Screenshot of a shorter Chrome window, with the character truncated at the knees" src="./docs/short-window.png" style="width: 100%;" />
 
+### Done
+
 ### Exercise 3: Overflow
 
 Each control panel features a number of customizations. For control panels with too many options, a horizontal scrollbar should be introduced:
 
 <img alt="Close-up screen recording of the overflow area in the control-panel" src="./docs/overflow.gif" style="width: 100%;" />
+
+### Done
 
 ### Exercise 4: Perspective decoration
 
@@ -105,6 +106,8 @@ You can use the background color `hsl(195deg, 20%, 86%)`.
 
 For bonus points, solve this challenge without setting any z-indexes.
 
+### Done
+
 ### Exercise 5 (Stretch): Implement a mobile variant
 
 On mobile devices, the cards should stack horizontally, and sit near the bottom of the screen, underneath the character:
@@ -112,7 +115,6 @@ On mobile devices, the cards should stack horizontally, and sit near the bottom 
 <img alt="Screen recording, showing a mobile variant of the application" src="./docs/mobile-variant.gif" style="max-width: 100%" />
 
 **NOTE:** This is a challenging stretch goal! It may require some CSS features we haven't covered yet. This is meant as an extra challenge for advanced students. Feel free to skip it!
-
 
 ## Submissions
 
